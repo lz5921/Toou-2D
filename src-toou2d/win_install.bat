@@ -18,6 +18,6 @@ if %ANDROID% == YES copy /y %LIBFILE_PATH% %BUILDER_BIN_PATH%
 
 if %1 == SHARED (
     echo running install to qtqml folder
-    rmdir /s /q %QT_QML_T2D_PATH% & md %QT_QML_T2D_PATH%
+  
     copy /y %BUILDER_BIN_PATH% %QT_QML_T2D_PATH%
 )
